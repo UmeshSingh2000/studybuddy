@@ -12,9 +12,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   width: 100%;
 }
@@ -29,7 +33,7 @@ body, html {
 .navbar .logo h1 {
   font-family: googleItalic;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 400;
   text-decoration: underline;
 }
 .navbar ul {
@@ -60,4 +64,80 @@ body, html {
   cursor: pointer;
   width: 100px;
   border-radius: 10px;
+}
+
+main {
+  height: 100%;
+  display: flex;
+}
+main .voiceAss {
+  z-index: 1;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  background-color: #FA9B24;
+  padding: 10px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .voiceAss i {
+  color: white;
+  cursor: pointer;
+  font-size: 2vw;
+}
+main .left {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10vh;
+  gap: 5px;
+}
+main .left h1 {
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+}
+main .left h2 {
+  width: 50%;
+  font-family: googleItalic;
+  font-weight: 500;
+  font-size: 2vw;
+}
+main .left p {
+  font-weight: 400;
+  font-size: 1.5vw;
+}
+main .left .btn {
+  background-color: #FA9B24;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  width: 150px;
+  border-radius: 10px;
+}
+main .left,
+main .right {
+  width: 50%;
+  height: 90vh;
+}
+main .right {
+  position: relative;
+}
+main .right img {
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }/*# sourceMappingURL=main.css.map */
