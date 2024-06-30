@@ -83,10 +83,10 @@ main .voiceAss {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 main .voiceAss i {
   color: white;
-  cursor: pointer;
   font-size: 2vw;
 }
 main .left {
@@ -140,4 +140,38 @@ main .right img {
   -o-object-fit: contain;
      object-fit: contain;
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+@media (max-width: 1080px) {
+  main .right {
+    display: none;
+  }
+  main .left {
+    width: 100%;
+    background-image: url("../assets/Media/bg homepage.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: end;
+    align-items: start;
+    padding-left: 1vh;
+  }
+  main .left h1 {
+    font-size: 2.5rem;
+  }
+  main .left h2 {
+    font-size: 1.5rem;
+  }
+  main .left p {
+    font-size: 1rem;
+  }
+  main .voiceAss i {
+    font-size: 1.8rem;
+  }
+  .navbar {
+    margin: 0 1vh;
+  }
+  .navbar ul {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
