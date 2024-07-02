@@ -7,6 +7,10 @@
   font-family: googleItalic;
   src: url(../assets/font/google-sans/ProductSans-Italic.ttf);
 }
+@font-face {
+  font-family: futura;
+  src: url(../assets/font/futura/FuturaXBlk\b T.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -152,15 +156,22 @@ main .right img {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    justify-content: end;
-    align-items: start;
     padding-left: 1vh;
   }
   main .left h1 {
-    font-size: 2.5rem;
+    font-family: futura;
+    color: white;
+    font-size: 4rem;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
   }
   main .left h2 {
-    font-size: 1.5rem;
+    font-family: futura;
+    font-weight: 900;
+    width: 100%;
+    color: white;
+    -webkit-text-stroke: 2px black;
+    font-size: 2rem;
   }
   main .left p {
     font-size: 1rem;

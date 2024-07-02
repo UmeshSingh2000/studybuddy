@@ -7,6 +7,10 @@
     font-family: googleItalic;
     src: url(../assets/font/google-sans/ProductSans-Italic.ttf);
 }
+@font-face {
+    font-family: futura;
+    src: url(../assets/font/futura/Futura\XBlk\BT.ttf);
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
@@ -181,15 +185,22 @@ main {
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
-            justify-content: end;
-            align-items: start;
             padding-left: 1vh;
             // padding-bottom: 10vh;
             h1{
-                font-size: 2.5rem;
+                font-family: futura;
+                color: white;
+                font-size: 4rem;
+                font-weight: 900;
+                -webkit-text-stroke: 2px black;
             }
             h2{
-                font-size: 1.5rem;
+                font-family: futura;
+                font-weight: 900;
+                width: 100%;
+                color: white;
+                -webkit-text-stroke: 2px black;
+                font-size: 2rem;
             }
             p{
                 font-size: 1rem;
