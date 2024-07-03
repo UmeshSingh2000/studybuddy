@@ -5,9 +5,6 @@ const Home = () => {
     return (
         <>
             <main>
-                <div className="voiceAss">
-                <i className="fa-solid fa-microphone-lines"></i>
-                </div>
                 <div className="left">
                     <h1>Start your favourite course</h1>
                     <h2>Now learn from anywhere,and build your bright career</h2>

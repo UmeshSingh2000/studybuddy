@@ -74,25 +74,6 @@ main {
   height: 100%;
   display: flex;
 }
-main .voiceAss {
-  z-index: 1;
-  position: absolute;
-  bottom: 2%;
-  right: 2%;
-  background-color: #FA9B24;
-  padding: 10px;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-main .voiceAss i {
-  color: white;
-  font-size: 2vw;
-}
 main .left {
   height: 100%;
   display: flex;
@@ -146,6 +127,47 @@ main .right img {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
 }
 
+.courses {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  width: 400px;
+  border: 1px solid black;
+  position: relative;
+}
+.card .btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #FA9B24;
+  color: white;
+  border: none;
+  border-top-left-radius: 5px;
+}
+.card .card-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 250px;
+}
+.card .card-body {
+  padding: 5px;
+}
+.card .card-body h5 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.card .card-body i {
+  color: yellow;
+}
+
 @media (max-width: 1080px) {
   main .right {
     display: none;
@@ -175,9 +197,6 @@ main .right img {
   }
   main .left p {
     font-size: 1rem;
-  }
-  main .voiceAss i {
-    font-size: 1.8rem;
   }
   .navbar {
     margin: 0 1vh;

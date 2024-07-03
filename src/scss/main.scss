@@ -7,6 +7,7 @@
     font-family: googleItalic;
     src: url(../assets/font/google-sans/ProductSans-Italic.ttf);
 }
+
 @font-face {
     font-family: futura;
     src: url(../assets/font/futura/Futura\XBlk\BT.ttf);
@@ -85,26 +86,6 @@ html {
 }
 
 main {
-    .voiceAss {
-        z-index: 1;
-        position: absolute;
-        bottom: 2%;
-        right: 2%;
-        background-color: #FA9B24;
-        padding: 10px;
-        border-radius: 50%;
-        height: 50px;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        i {
-            color: white;
-            font-size: 2vw;
-        }
-    }
-
     // background-color: red;
     height: 100%;
     display: flex;
@@ -171,30 +152,74 @@ main {
         }
     }
 }
+.courses{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card {
+    width: 400px;
+    border: 1px solid black;
+    // background-color: red;
+    position: relative;
+    .btn{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        padding: 10px;
+        cursor: pointer;
+        background-color: #FA9B24;
+        color: white;
+        border: none;
+        border-top-left-radius: 5px;
+    }
+    .card-image {
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 250px;
+        }
+    }
+    .card-body{
+        padding: 5px;
+        h5{
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        i{
+            color: yellow;
+        }
+    }
+}
 
 
 
 @media (max-width:1080px) {
-    main{
-        .right{
+    main {
+        .right {
             display: none;
         }
-        .left{
+
+        .left {
             width: 100%;
             background-image: url("../assets/Media/bg homepage.png");
             background-position: center;
             background-size: contain;
             background-repeat: no-repeat;
             padding-left: 1vh;
+
             // padding-bottom: 10vh;
-            h1{
+            h1 {
                 font-family: futura;
                 color: white;
                 font-size: 4rem;
                 font-weight: 900;
                 -webkit-text-stroke: 2px black;
             }
-            h2{
+
+            h2 {
                 font-family: futura;
                 font-weight: 900;
                 width: 100%;
@@ -202,21 +227,19 @@ main {
                 -webkit-text-stroke: 2px black;
                 font-size: 2rem;
             }
-            p{
+
+            p {
                 font-size: 1rem;
             }
         }
-        .voiceAss{
-            i{
-                font-size: 1.8rem;
-            }
-        }
     }
-    .navbar{
+
+    .navbar {
         margin: 0 1vh;
-        ul{
+
+        ul {
             display: none;
         }
     }
-    
+
 }
